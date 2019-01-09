@@ -36,15 +36,15 @@
     <!-- Beginning main -->
     <main id="maincontent" class="inside-maincontent">
       <!-- Beginning map -->
-      <section id="map-container" class="inside-map-container">
-        <div id="map" class="inside-map"></div>
+      <section id="map-container" class="inside-map-container" tabindex="-1">
+        <div id="map" class="inside-map" tabindex="-1"></div>
       </section>
       <!-- End map -->
       <!-- Beginning restaurant -->
       <section id="restaurant-container" class="inside-restaurant-container">
         <div class="inside-restaurant">
           <h1 id="restaurant-name" class="inside-restaurant-name"></h1>
-          <img id="restaurant-img" class="inside-restaurant-img" />
+          <img id="restaurant-img" class="inside-restaurant-img" tabindex="0" />
         </div>
         <div id="rest-content" class="inside-rest-content">
           <h2 id="restaurant-cuisine" class="inside-restaurant-cuisine"></h2>
@@ -55,7 +55,7 @@
       <!-- end restaurant -->
       <!-- Beginning reviews -->
       <section id="reviews-container" class="inside-reviews-container">
-        <ul id="reviews-list" class="inside-reviews-list"></ul>
+        <ul id="reviews-list" class="inside-reviews-list" tabindex="0"></ul>
       </section>
       <!-- End reviews -->
     </main>
