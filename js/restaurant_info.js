@@ -209,14 +209,14 @@ getParameterByName = (name, url) => {
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 };
 
-const setTabIndex = element =>
-  (document.querySelectorAll(`.${element}`).tabIndex = -1);
+// const setTabIndex = element =>
+//   (document.querySelectorAll(`.${element}`).tabIndex = -1);
 
-const desiredElements = [
-  'inside-map',
-  'leaflet-control-zoom-in',
-  'leaflet-control-zoom-out',
-  'leaflet-control-attribution',
-];
-// desiredElements.forEach(element => setTabIndex(element));
-setTabIndex('inside-map');
+// const desiredElements = [
+//   'inside-map',
+//   'leaflet-control-zoom-in',
+//   'leaflet-control-zoom-out',
+//   'leaflet-control-attribution',
+// ];
+// // desiredElements.forEach(element => setTabIndex(element));
+// setTabIndex('inside-map');
