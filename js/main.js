@@ -84,9 +84,9 @@ initMap = () => {
         'pk.eyJ1IjoianJjaGFwcHJvZ3JhbW1lciIsImEiOiJjanBzdm1sNXkwYzMxM3hvNzd2YTh6b3Z2In0.ZWgwty-Xanw5lh2KC4an6w',
       maxZoom: 18,
       attribution:
-        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        'Map data &copy; <a href="https://www.openstreetmap.org/" tabindex="-1">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/" tabindex="-1">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/" tabindex="-1">Mapbox</a>',
       id: 'mapbox.streets',
     }
   ).addTo(newMap);

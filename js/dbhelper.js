@@ -178,6 +178,7 @@ class DBHelper {
       {
         title: restaurant.name,
         alt: restaurant.name,
+        keyboard: false,
         url: DBHelper.urlForRestaurant(restaurant),
       }
     );

@@ -50,13 +50,22 @@
         <div id="rest-content" class="inside-rest-content">
           <h2 id="restaurant-cuisine" class="inside-restaurant-cuisine"></h2>
           <p id="restaurant-address" class="inside-restaurant-address"></p>
-          <table id="restaurant-hours" class="inside-restaurant-hours"></table>
+          <table
+            id="restaurant-hours"
+            class="inside-restaurant-hours"
+            tabindex="0"
+          ></table>
         </div>
       </section>
       <!-- end restaurant -->
       <!-- Beginning reviews -->
-      <section id="reviews-container" class="inside-reviews-container">
-        <ul id="reviews-list" class="inside-reviews-list" tabindex="0"></ul>
+      <section
+        id="reviews-container"
+        class="inside-reviews-container"
+        aria-label="reviews list"
+        tabindex="0"
+      >
+        <ul id="reviews-list" class="inside-reviews-list"></ul>
       </section>
       <!-- End reviews -->
     </main>
