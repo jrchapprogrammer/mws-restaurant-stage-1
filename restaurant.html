@@ -21,34 +21,45 @@
   <body class="inside">
     <!-- Beginning header -->
     <header class="inside-header">
-      <!-- Beginning nav -->
-      <nav class="inside-nav">
-        <h1><a href="/">Restaurant Reviews</a></h1>
-      </nav>
+      <h1 class="inside-title"><a href="/">Restaurant Reviews</a></h1>
+    </header>
+    <!-- End header -->
+    <!-- Beginning nav -->
+    <nav class="inside-nav">
       <!-- Beginning breadcrumb -->
-      <ul id="breadcrumb" class="inside-breadcrumb" aria-label="Breadcrumb">
+      <ul
+        id="breadcrumb"
+        class="inside-breadcrumb"
+        aria-label="Breadcrumb"
+        role="navigation"
+      >
         <li><a href="/">Home</a></li>
       </ul>
       <!-- End breadcrumb -->
-      <!-- End nav -->
-    </header>
-    <!-- End header -->
+    </nav>
+    <!-- End nav -->
 
     <!-- Beginning main -->
     <main id="maincontent" class="inside-maincontent">
       <!-- Beginning map -->
       <section id="map-container" class="inside-map-container" tabindex="-1">
-        <div id="map" class="inside-map" tabindex="-1"></div>
+        <div
+          id="map"
+          class="inside-map"
+          tabindex="-1"
+          aria-label="location"
+          role="application"
+        ></div>
       </section>
       <!-- End map -->
       <!-- Beginning restaurant -->
       <section id="restaurant-container" class="inside-restaurant-container">
         <div class="inside-restaurant">
-          <h1 id="restaurant-name" class="inside-restaurant-name"></h1>
+          <h2 id="restaurant-name" class="inside-restaurant-name"></h2>
           <img id="restaurant-img" class="inside-restaurant-img" tabindex="0" />
         </div>
         <div id="rest-content" class="inside-rest-content">
-          <h2 id="restaurant-cuisine" class="inside-restaurant-cuisine"></h2>
+          <h3 id="restaurant-cuisine" class="inside-restaurant-cuisine"></h3>
           <p id="restaurant-address" class="inside-restaurant-address"></p>
           <table
             id="restaurant-hours"

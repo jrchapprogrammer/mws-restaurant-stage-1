@@ -1,4 +1,4 @@
-let version = 6;
+let version = 2;
 let myCache = [`'REST_CACHE-v${version}'`];
 
 self.addEventListener('install', e => {
@@ -9,7 +9,7 @@ self.addEventListener('activate', e => {
     caches.keys().then(keys =>
       Promise.all(
         keys.map(key => {
-          if (!myCache.includes(key)) {
+          if (key !== myCache) {
             return caches.delete(key);
           }
         })
@@ -25,6 +25,7 @@ self.addEventListener('fetch', e => {
         const resClone = response.clone();
         caches.open(myCache).then(cache => {
           cache.put(e.request, resClone);
+          console.log('cached');
         });
         return response;
       })

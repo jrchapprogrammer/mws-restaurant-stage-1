@@ -107,17 +107,21 @@ header {
   text-transform: uppercase;
 }
 /* ====================== Navigation ====================== */
-nav {
+.main-nav,
+.inside-title {
   display: flex;
   background-color: #252831;
   text-align: center;
   padding: 2rem 0;
+  justify-content: center;
 }
-nav h1 {
+.main-nav h1,
+.inside-title {
   margin: auto;
   font-size: 3.2em;
 }
-nav h1 a {
+.main-nav h1 a,
+.inside-title a {
   color: #fff;
   font-size: 1em;
   font-weight: 200;
@@ -228,7 +232,7 @@ nav h1 a {
   min-width: 100%;
   object-fit: cover;
 }
-.main-restaurants-list li h1 {
+.main-restaurants-list li h2 {
   color: #b46100;
   font-family: Arial, sans-serif;
   font-size: 2.2em;
@@ -261,6 +265,7 @@ nav h1 a {
   display: grid;
   grid-template-areas:
     'header'
+    'breadcrumb'
     'main-content'
     'footer';
 }
@@ -363,7 +368,7 @@ nav h1 a {
   grid-area: reviews;
   padding: 30px 40px 80px;
 }
-.inside-reviews-container h2 {
+.inside-reviews-container h3 {
   color: #ff9111;
   font-size: 2.6em;
   font-weight: 300;
